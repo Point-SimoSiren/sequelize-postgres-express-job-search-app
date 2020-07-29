@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Index route
 app.get('/', (req, res) => res.render('index', { layout: 'landing' }));
 
-// Gig routes
+// Job routes
 app.use('/jobs', require('./routes/jobs'));
 
 const PORT = process.env.PORT || 5000;
